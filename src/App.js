@@ -108,8 +108,11 @@ function App() {
 export default App;
 const Panel = () => {
 	return (
-		<div className="border-b border-info bg-white h-36 w-full">
-			<input type="text" className="border border-info" />
+		<div className="border-b border-info bg-white h-36 w-full p-4">
+			<input
+				type="text"
+				className="border border-info w-full rounded-lg p-2"
+			/>
 		</div>
 	);
 };
