@@ -97,7 +97,9 @@ const cardData = [
 function App() {
 	return (
 		<div className="App">
-			<CardList cardData={cardData} />
+			<div className="px-4 w-full h-screen bg-gray-300">
+				<CardList cardData={cardData} />
+			</div>
 		</div>
 	);
 }

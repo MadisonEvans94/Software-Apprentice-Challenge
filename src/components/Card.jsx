@@ -11,10 +11,10 @@ const Card = ({
 }) => {
 	return (
 		<div className="border bg-white rounded-lg shadow-lg p-6 w-full mx-auto my-4">
-			<div className="grid grid-cols-1 text-base text-gray-800">
-				<div className="text-lg font-semibold text-blue-600 mb-4 col-span-2">
+			<div className="flex flex-col text-base text-gray-800">
+				<h2 className="text-lg font-semibold text-blue-600 mb-4">
 					Campaign: {campaign}
-				</div>
+				</h2>
 				{/* Adset */}
 				<div className="">{adset}</div>
 				{/* Creative */}
