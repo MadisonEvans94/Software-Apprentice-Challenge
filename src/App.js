@@ -118,7 +118,7 @@ export default App;
 const Panel = ({ setSearchQuery }) => {
 	return (
 		<div className="flex border-b border-info bg-white h-36 w-full p-4">
-			<div className="flex flex-row my-auto mx-12 lg:mx-48 w-full">
+			<div className="flex flex-row my-auto mx-auto max-w-[600px] w-full">
 				<input
 					type="text"
 					className="border border-info w-full rounded-full py-2 px-4"
