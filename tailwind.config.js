@@ -8,7 +8,7 @@ module.exports = {
 				body: ["Roboto", "Ubuntu", "sans-serif"],
 			},
 			colors: {
-				primary: "#d8dde6",
+				primary: "#dddddd",
 				secondary: "#2576f5",
 				tertiary: "#28cdfc",
 				info: "#262626",

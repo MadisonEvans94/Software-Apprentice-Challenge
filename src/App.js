@@ -97,7 +97,8 @@ const cardData = [
 function App() {
 	return (
 		<div className="App">
-			<div className="px-4 w-full h-screen bg-primary">
+			<div className="w-full h-screen bg-primary">
+				<Panel />
 				<CardList cardData={cardData} />
 			</div>
 		</div>
@@ -105,10 +106,16 @@ function App() {
 }
 
 export default App;
-
+const Panel = () => {
+	return (
+		<div className="border-b border-info bg-white h-36 w-full">
+			<input type="text" className="border border-info" />
+		</div>
+	);
+};
 const CardList = ({ cardData }) => {
 	return (
-		<ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+		<ul className="mx-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
 			{cardData.map((card) => (
 				<li key={card.campaign}>
 					<Card
