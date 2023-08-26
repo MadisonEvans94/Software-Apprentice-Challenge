@@ -10,9 +10,9 @@ const Card = ({
 	results,
 }) => {
 	return (
-		<div className="border bg-white rounded-lg shadow-lg p-6 w-full mx-auto my-4">
-			<div className="flex flex-col text-base text-gray-800">
-				<h2 className="text-lg font-semibold text-blue-600 mb-4">
+		<div className="border border-info bg-white rounded-lg shadow-sm p-6 w-full mx-auto my-4">
+			<div className="flex flex-col text-base text-info">
+				<h2 className="font-semibold text-secondary text-xl mb-4">
 					Campaign: {campaign}
 				</h2>
 				{/* Adset */}
