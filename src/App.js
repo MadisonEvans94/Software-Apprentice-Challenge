@@ -107,6 +107,9 @@ function App() {
 		<div className="bg-primary fixed w-full h-full overflow-auto">
 			<div className="w-full h-full bg-primary">
 				<Panel setSearchQuery={setSearchQuery} />
+				<h1 className="font-semibold font-display text-secondary text-7xl py-12 px-24">
+					Campaigns
+				</h1>
 				<CardList cardData={filteredCardData} />
 			</div>
 		</div>
@@ -125,14 +128,14 @@ const Panel = ({ setSearchQuery }) => {
 					onChange={(e) => setSearchQuery(e.target.value)}
 					aria-label="Search Campaigns"
 				/>
-				<Search size="2em" className="w-10 h-full ml-4" />
+				<Search size="2em" className="w-10 h-full ml-4 text-info" />
 			</div>
 		</div>
 	);
 };
 const CardList = ({ cardData }) => {
 	return (
-		<ul className="mx-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 py-4">
+		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 pb-8">
 			{cardData.map((card) => (
 				<li key={card.campaign}>
 					<Card
