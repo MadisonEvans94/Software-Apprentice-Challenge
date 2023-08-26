@@ -3,6 +3,16 @@ import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
 import { useState } from "react";
 
+// TODO:
+// [ ] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
+// [ ] use the data in the fakeDataSet from the provided API to populate the cards with standardized data
+// [x] make cards sortable by spend, ascending and descending and clearable
+// [x] cards should be searchable by campaign name
+
+// TODO: Helper Functions
+// [ ] create a function that accounts for different types of names
+// [ ] handle google analytics
+
 const cardData = [
 	{
 		campaign: "Summer Sale",
@@ -98,18 +108,31 @@ const cardData = [
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
+	const [sortOrder, setSortOrder] = useState(null); // 'asc', 'desc', or null
 
-	const filteredCardData = cardData.filter((card) =>
+	let filteredCardData = cardData.filter((card) =>
 		card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
 	);
+
+	if (sortOrder === "asc") {
+		filteredCardData = [...filteredCardData].sort(
+			(a, b) => a.spend - b.spend
+		);
+	} else if (sortOrder === "desc") {
+		filteredCardData = [...filteredCardData].sort(
+			(a, b) => b.spend - a.spend
+		);
+	} else if (sortOrder === "clear") {
+		filteredCardData = [...cardData];
+	}
 
 	return (
 		<div className="bg-primary fixed w-full h-full overflow-auto">
 			<div className="w-full h-full bg-primary flex flex-col">
-				<Panel setSearchQuery={setSearchQuery} />
-				<h1 className="font-semibold font-display text-secondary text-7xl py-12 mx-auto">
-					Campaigns
-				</h1>
+				<Panel
+					setSearchQuery={setSearchQuery}
+					setSortOrder={setSortOrder}
+				/>
 				<CardList cardData={filteredCardData} />
 			</div>
 		</div>
@@ -118,7 +141,7 @@ function App() {
 
 export default App;
 
-const Panel = ({ setSearchQuery }) => {
+const Panel = ({ setSearchQuery, setSortOrder }) => {
 	return (
 		<div className="flex border-b border-info bg-white h-36 w-full p-4">
 			<div className="flex flex-row my-auto mx-auto max-w-[600px] w-full">
@@ -129,6 +152,15 @@ const Panel = ({ setSearchQuery }) => {
 					aria-label="Search Campaigns"
 				/>
 				<Search size="2em" className="w-10 h-full ml-4 text-info" />
+				<select
+					className="ml-4 border border-info rounded-full py-2 px-4"
+					onChange={(e) => setSortOrder(e.target.value)}
+				>
+					<option value="">Sort by Spend</option>
+					<option value="asc">Ascending</option>
+					<option value="desc">Descending</option>
+					<option value="clear">Clear</option>
+				</select>
 			</div>
 		</div>
 	);
