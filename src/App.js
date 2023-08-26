@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
+import { useState } from "react";
 
 const cardData = [
 	{
@@ -96,24 +97,32 @@ const cardData = [
 ];
 
 function App() {
+	const [searchQuery, setSearchQuery] = useState("");
+
+	const filteredCardData = cardData.filter((card) =>
+		card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
+	);
+
 	return (
 		<div className="App">
 			<div className="w-full h-screen bg-primary">
-				<Panel />
-				<CardList cardData={cardData} />
+				<Panel setSearchQuery={setSearchQuery} />
+				<CardList cardData={filteredCardData} />
 			</div>
 		</div>
 	);
 }
 
 export default App;
-const Panel = () => {
+const Panel = ({ setSearchQuery }) => {
 	return (
 		<div className="flex border-b border-info bg-white h-36 w-full p-4">
 			<div className="flex flex-row my-auto mx-48 w-full">
 				<input
 					type="text"
 					className="border border-info w-full rounded-lg p-2"
+					onChange={(e) => setSearchQuery(e.target.value)}
+					aria-label="Search Campaigns"
 				/>
 				<Search size="2em" className="w-10 h-full ml-4" />
 			</div>
