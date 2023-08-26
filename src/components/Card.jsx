@@ -10,7 +10,7 @@ const Card = ({
 	results,
 }) => {
 	return (
-		<div className="border border-info bg-white rounded-lg shadow-sm p-6 w-full mx-auto my-4 h-fit">
+		<div className="border border-info bg-white rounded-xl shadow-sm p-6 w-full mx-auto h-fit">
 			<div className="flex font-body flex-col h-full text-base text-info leading-7">
 				<h3 className="font-semibold font-display text-secondary text-3xl mb-4">
 					{campaign}
