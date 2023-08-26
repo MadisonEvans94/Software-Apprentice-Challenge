@@ -34,19 +34,28 @@ const cardData = [
 function App() {
 	return (
 		<div className="App">
-			{cardData.map((card) => (
-				<Card
-					campaign={card.campaign}
-					adset={card.adset}
-					creative={card.creative}
-					spend={card.spend}
-					impressions={card.impressions}
-					clicks={card.clicks}
-					results={card.results}
-				/>
-			))}
+			<CardList cardData={cardData} />
 		</div>
 	);
 }
 
 export default App;
+const CardList = ({ cardData }) => {
+	return (
+		<ul>
+			{cardData.map((card) => (
+				<li key={card.campaign}>
+					<Card
+						campaign={card.campaign}
+						adset={card.adset}
+						creative={card.creative}
+						spend={card.spend}
+						impressions={card.impressions}
+						clicks={card.clicks}
+						results={card.results}
+					/>
+				</li>
+			))}
+		</ul>
+	);
+};

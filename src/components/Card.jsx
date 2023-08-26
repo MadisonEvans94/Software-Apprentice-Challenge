@@ -10,7 +10,7 @@ const Card = ({
 	results,
 }) => {
 	return (
-		<div className="bg-white rounded-lg shadow-lg p-6 w-96 mx-auto my-4">
+		<div className="border bg-white rounded-lg shadow-lg p-6 w-96 mx-auto my-4">
 			<div className="grid grid-cols-2 gap-4">
 				<div className="text-lg font-semibold text-blue-600 mb-4 col-span-2">
 					Campaign: {campaign}
