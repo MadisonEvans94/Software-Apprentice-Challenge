@@ -108,7 +108,7 @@ export default App;
 
 const CardList = ({ cardData }) => {
 	return (
-		<ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+		<ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
 			{cardData.map((card) => (
 				<li key={card.campaign}>
 					<Card

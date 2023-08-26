@@ -3,6 +3,10 @@ module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				display: ["Segoe UI", "Helvetica Neue", "serif"],
+				body: ["Roboto", "Ubuntu", "sans-serif"],
+			},
 			colors: {
 				primary: "#d8dde6",
 				secondary: "#2576f5",
