@@ -1,7 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // TODO:
 // [ ] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
@@ -109,6 +109,31 @@ const cardData = [
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [sortOrder, setSortOrder] = useState(null);
+	const [data, setData] = useState(null);
+	useEffect(() => {
+		async function fetchData() {
+			try {
+				const response = await fetch(
+					"http://localhost:3000/fakeDataSet"
+				);
+				if (response.ok) {
+					const data = await response.json();
+					setData(data);
+				} else {
+					console.error(
+						"Failed to fetch data:",
+						response.status,
+						response.statusText
+					);
+				}
+			} catch (error) {
+				console.error("An error occurred while fetching data:", error);
+			}
+		}
+		fetchData();
+	}, []);
+
+	console.log(data);
 
 	let filteredCardData = cardData.filter((card) =>
 		card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
