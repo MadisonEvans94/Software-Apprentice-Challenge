@@ -105,9 +105,9 @@ function App() {
 
 	return (
 		<div className="bg-primary fixed w-full h-full overflow-auto">
-			<div className="w-full h-full bg-primary">
+			<div className="w-full h-full bg-primary flex flex-col">
 				<Panel setSearchQuery={setSearchQuery} />
-				<h1 className="font-semibold font-display text-secondary text-7xl py-12 px-24">
+				<h1 className="font-semibold font-display text-secondary text-7xl py-12 mx-auto">
 					Campaigns
 				</h1>
 				<CardList cardData={filteredCardData} />
@@ -135,7 +135,7 @@ const Panel = ({ setSearchQuery }) => {
 };
 const CardList = ({ cardData }) => {
 	return (
-		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 pb-8">
+		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 pb-8">
 			{cardData.map((card) => (
 				<li key={card.campaign}>
 					<Card
