@@ -29,6 +29,69 @@ const cardData = [
 		clicks: 1500,
 		results: 61,
 	},
+	{
+		campaign: "Winter Clearance",
+		adset: "Email Marketing",
+		creative: "Winter Blowout",
+		spend: 1700,
+		impressions: 27000,
+		clicks: 1300,
+		results: 55,
+	},
+	{
+		campaign: "Spring Fling",
+		adset: "Influencer Marketing",
+		creative: "Spring Styles",
+		spend: 1100,
+		impressions: 19000,
+		clicks: 900,
+		results: 42,
+	},
+	{
+		campaign: "Tech Tuesday",
+		adset: "Search Ads",
+		creative: "Gadget Deals",
+		spend: 1600,
+		impressions: 26000,
+		clicks: 1250,
+		results: 50,
+	},
+	{
+		campaign: "Fitness First",
+		adset: "Social Media Ads",
+		creative: "New Year, New You",
+		spend: 1800,
+		impressions: 29000,
+		clicks: 1400,
+		results: 65,
+	},
+	{
+		campaign: "Black Friday",
+		adset: "Display Ads",
+		creative: "Holiday Savings",
+		spend: 2200,
+		impressions: 35000,
+		clicks: 1600,
+		results: 75,
+	},
+	{
+		campaign: "Cyber Monday",
+		adset: "Email Marketing",
+		creative: "Online Exclusive",
+		spend: 2100,
+		impressions: 34000,
+		clicks: 1550,
+		results: 70,
+	},
+	{
+		campaign: "Valentine's Day",
+		adset: "Influencer Marketing",
+		creative: "Love is in the Air",
+		spend: 1300,
+		impressions: 20000,
+		clicks: 950,
+		results: 45,
+	},
 ];
 
 function App() {
@@ -40,9 +103,10 @@ function App() {
 }
 
 export default App;
+
 const CardList = ({ cardData }) => {
 	return (
-		<ul>
+		<ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 			{cardData.map((card) => (
 				<li key={card.campaign}>
 					<Card
