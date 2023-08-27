@@ -2,7 +2,7 @@ import "./App.css";
 import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
 import { useState, useEffect } from "react";
-
+import { standardizeAds, mergeAnalytics } from "./utility";
 // TODO:
 // [ ] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
 // [ ] use the data in the fakeDataSet from the provided API to populate the cards with standardized data
@@ -13,103 +13,11 @@ import { useState, useEffect } from "react";
 // [ ] create a function that accounts for different types of names
 // [ ] handle google analytics
 
-const cardData = [
-	{
-		campaign: "Summer Sale",
-		adset: "Social Media Ads",
-		creative: "Beach Vacation Promo",
-		spend: 1500,
-		impressions: 25000,
-		clicks: 1200,
-		results: 72,
-	},
-	{
-		campaign: "Back to School",
-		adset: "Display Ads",
-		creative: "School Supplies Deal",
-		spend: 1000,
-		impressions: 18000,
-		clicks: 800,
-		results: 38,
-	},
-	{
-		campaign: "Fall Fashion",
-		adset: "Search Ads",
-		creative: "Festive Sneak Peek",
-		spend: 2000,
-		impressions: 30000,
-		clicks: 1500,
-		results: 61,
-	},
-	{
-		campaign: "Winter Clearance",
-		adset: "Email Marketing",
-		creative: "Winter Blowout",
-		spend: 1700,
-		impressions: 27000,
-		clicks: 1300,
-		results: 55,
-	},
-	{
-		campaign: "Spring Fling",
-		adset: "Influencer Marketing",
-		creative: "Spring Styles",
-		spend: 1100,
-		impressions: 19000,
-		clicks: 900,
-		results: 42,
-	},
-	{
-		campaign: "Tech Tuesday",
-		adset: "Search Ads",
-		creative: "Gadget Deals",
-		spend: 1600,
-		impressions: 26000,
-		clicks: 1250,
-		results: 50,
-	},
-	{
-		campaign: "Fitness First",
-		adset: "Social Media Ads",
-		creative: "New Year, New You",
-		spend: 1800,
-		impressions: 29000,
-		clicks: 1400,
-		results: 65,
-	},
-	{
-		campaign: "Black Friday",
-		adset: "Display Ads",
-		creative: "Holiday Savings",
-		spend: 2200,
-		impressions: 35000,
-		clicks: 1600,
-		results: 75,
-	},
-	{
-		campaign: "Cyber Monday",
-		adset: "Email Marketing",
-		creative: "Online Exclusive",
-		spend: 2100,
-		impressions: 34000,
-		clicks: 1550,
-		results: 70,
-	},
-	{
-		campaign: "Valentine's Day",
-		adset: "Influencer Marketing",
-		creative: "Love is in the Air",
-		spend: 1300,
-		impressions: 20000,
-		clicks: 950,
-		results: 45,
-	},
-];
-
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [sortOrder, setSortOrder] = useState(null);
 	const [data, setData] = useState(null);
+
 	useEffect(() => {
 		async function fetchData() {
 			try {
@@ -117,8 +25,29 @@ function App() {
 					"http://localhost:3000/fakeDataSet"
 				);
 				if (response.ok) {
-					const data = await response.json();
-					setData(data);
+					const rawData = await response.json();
+
+					// Standardize and merge data
+					const standardizedFacebookAds = standardizeAds(
+						rawData.facebook_ads,
+						"Facebook"
+					);
+					const standardizedTwitterAds = standardizeAds(
+						rawData.twitter_ads,
+						"Twitter"
+					);
+					const standardizedSnapchatAds = standardizeAds(
+						rawData.snapchat_ads,
+						"Snapchat"
+					);
+					const allAds = [
+						...standardizedFacebookAds,
+						...standardizedTwitterAds,
+						...standardizedSnapchatAds,
+					];
+					mergeAnalytics(allAds, rawData.google_analytics);
+
+					setData(allAds); // Set the processed data
 				} else {
 					console.error(
 						"Failed to fetch data:",
@@ -134,21 +63,21 @@ function App() {
 	}, []);
 
 	console.log(data);
+	let filteredCardData = [];
 
-	let filteredCardData = cardData.filter((card) =>
-		card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
-	);
+	if (data) {
+		// Check if data is not null
+		filteredCardData = data.filter((card) =>
+			card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
+		);
 
-	if (sortOrder === "asc") {
-		filteredCardData = [...filteredCardData].sort(
-			(a, b) => a.spend - b.spend
-		);
-	} else if (sortOrder === "desc") {
-		filteredCardData = [...filteredCardData].sort(
-			(a, b) => b.spend - a.spend
-		);
-	} else if (sortOrder === "clear") {
-		filteredCardData = [...cardData];
+		if (sortOrder === "asc") {
+			filteredCardData.sort((a, b) => a.spend - b.spend);
+		} else if (sortOrder === "desc") {
+			filteredCardData.sort((a, b) => b.spend - a.spend);
+		} else if (sortOrder === "clear") {
+			filteredCardData = [...data];
+		}
 	}
 
 	return (
@@ -158,7 +87,7 @@ function App() {
 					setSearchQuery={setSearchQuery}
 					setSortOrder={setSortOrder}
 				/>
-				<CardList cardData={filteredCardData} />
+				{data && <CardList cardData={filteredCardData} />}
 			</div>
 		</div>
 	);
@@ -196,8 +125,9 @@ const Panel = ({ setSearchQuery, setSortOrder }) => {
 const CardList = ({ cardData }) => {
 	return (
 		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 py-8">
-			{cardData.map((card) => (
-				<li key={card.campaign}>
+			{/* TODO: Fix the index */}
+			{cardData.map((card, i) => (
+				<li key={i}>
 					<Card
 						campaign={card.campaign}
 						adset={card.adset}
