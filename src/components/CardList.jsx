@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 const CardList = ({ cardData }) => {
-	console.log("CARD DATA: ", cardData);
 	return (
 		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 py-8">
 			{cardData?.map((card) => (
