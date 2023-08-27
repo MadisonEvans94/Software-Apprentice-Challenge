@@ -85,7 +85,7 @@ const useDataServices = () => {
 			}
 		};
 		fetchData();
-	}, []);
+	}, [apiUrl]);
 	return { data };
 };
 
