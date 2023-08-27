@@ -20,7 +20,7 @@ const Panel = ({ setSearchQuery, setSortOrder }) => {
 				/>
 				<Search
 					size="2em"
-					className="w-10 h-full my-auto ml-4 text-info"
+					className="w-10 h-full my-auto ml-4 text-secondary"
 				/>
 			</div>
 		</div>

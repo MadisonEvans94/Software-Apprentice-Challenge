@@ -20,7 +20,6 @@ const standardizeAds = (ads, platform) => {
 const mergeAnalytics = (ads, analytics) => {
 	const aggregatedAnalytics = {};
 	let noDataCount = 0;
-
 	analytics.forEach((analytic) => {
 		const key = `${analytic.utm_campaign}-${analytic.utm_medium}-${analytic.utm_content}`;
 		if (aggregatedAnalytics[key]) {
@@ -29,7 +28,6 @@ const mergeAnalytics = (ads, analytics) => {
 			aggregatedAnalytics[key] = analytic.results;
 		}
 	});
-
 	const newAds = ads.map((ad) => {
 		const key = `${ad.campaign}-${ad.adset}-${ad.creative}`;
 		if (aggregatedAnalytics[key]) {
@@ -39,20 +37,17 @@ const mergeAnalytics = (ads, analytics) => {
 			return { ...ad, results: "No Data" };
 		}
 	});
-
 	console.log(`Number of ads with 'No Data': ${noDataCount}`);
 	return newAds;
 };
 
 const useDataServices = () => {
 	const [data, setData] = useState(null);
-
+	const apiUrl = process.env.REACT_APP_API_URL; // Importing the environment variable
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch(
-					"http://localhost:3000/fakeDataSet"
-				);
+				const response = await fetch(apiUrl);
 				if (response.ok) {
 					const rawData = await response.json();
 
@@ -68,13 +63,11 @@ const useDataServices = () => {
 						rawData.snapchat_ads,
 						"Snapchat"
 					);
-
 					const allAds = [
 						...standardizedFacebookAds,
 						...standardizedTwitterAds,
 						...standardizedSnapchatAds,
 					];
-
 					const mergedAds = mergeAnalytics(
 						allAds,
 						rawData.google_analytics
@@ -91,10 +84,8 @@ const useDataServices = () => {
 				console.error("An error occurred while fetching data:", error);
 			}
 		};
-
 		fetchData();
 	}, []);
-
 	return { data };
 };
 

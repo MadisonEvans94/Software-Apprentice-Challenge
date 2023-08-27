@@ -12,11 +12,9 @@ function App() {
 	let filteredCardData = [];
 
 	if (data) {
-		// Check if data is not null
 		filteredCardData = data.filter((card) =>
 			card.campaign.toLowerCase().includes(searchQuery.toLowerCase())
 		);
-
 		if (sortOrder === "asc") {
 			filteredCardData.sort((a, b) => a.spend - b.spend);
 		} else if (sortOrder === "desc") {
@@ -33,6 +31,9 @@ function App() {
 					setSearchQuery={setSearchQuery}
 					setSortOrder={setSortOrder}
 				/>
+				<h1 className="w-fit font-display text-4xl lg:text-7xl font-semibold mt-6 mb-2 mx-auto text-secondary">
+					Ad Campaigns
+				</h1>
 				{data && <CardList cardData={filteredCardData} />}
 			</div>
 		</div>
