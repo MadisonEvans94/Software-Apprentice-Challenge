@@ -16,22 +16,28 @@ export const standardizeAds = (ads, platform) => {
 };
 
 export const mergeAnalytics = (ads, analytics) => {
-	ads.forEach((ad, index) => {
-		const matchingAnalytics = analytics.find(
-			(analytic) =>
-				analytic.utm_campaign === ad.campaign &&
-				analytic.utm_medium === ad.adset &&
-				analytic.utm_content === ad.creative
-		);
-		if (matchingAnalytics) {
-			console.log(
-				`Match found for ad index ${index}:`,
-				matchingAnalytics
-			);
-			ad.results = matchingAnalytics.results;
+	const aggregatedAnalytics = {};
+	let noDataCount = 0;
+
+	analytics.forEach((analytic) => {
+		const key = `${analytic.utm_campaign}-${analytic.utm_medium}-${analytic.utm_content}`;
+		if (aggregatedAnalytics[key]) {
+			aggregatedAnalytics[key] += analytic.results;
 		} else {
-			console.log(`No match found for ad index ${index}`);
-			ad.results = "No Data";
+			aggregatedAnalytics[key] = analytic.results;
 		}
 	});
+
+	const newAds = ads.map((ad) => {
+		const key = `${ad.campaign}-${ad.adset}-${ad.creative}`;
+		if (aggregatedAnalytics[key]) {
+			return { ...ad, results: aggregatedAnalytics[key] };
+		} else {
+			noDataCount++;
+			return { ...ad, results: "No Data" };
+		}
+	});
+
+	console.log(`Number of ads with 'No Data': ${noDataCount}`);
+	return newAds;
 };

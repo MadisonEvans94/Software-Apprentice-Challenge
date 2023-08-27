@@ -3,14 +3,15 @@ import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { standardizeAds, mergeAnalytics } from "./utility";
+
 // TODO:
-// [ ] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
-// [ ] use the data in the fakeDataSet from the provided API to populate the cards with standardized data
+// [x] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
+// [x] use the data in the fakeDataSet from the provided API to populate the cards with standardized data
 // [x] make cards sortable by spend, ascending and descending and clearable
 // [x] cards should be searchable by campaign name
 
 // TODO: Helper Functions
-// [ ] create a function that accounts for different types of names
+// [x] create a function that accounts for different types of names
 // [ ] handle google analytics
 
 function App() {
@@ -45,9 +46,11 @@ function App() {
 						...standardizedTwitterAds,
 						...standardizedSnapchatAds,
 					];
-					mergeAnalytics(allAds, rawData.google_analytics);
-
-					setData(allAds); // Set the processed data
+					const mergedAds = mergeAnalytics(
+						allAds,
+						rawData.google_analytics
+					);
+					setData(mergedAds); // Set the processed data
 				} else {
 					console.error(
 						"Failed to fetch data:",
