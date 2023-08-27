@@ -100,13 +100,12 @@ export default App;
 
 const Panel = ({ setSearchQuery, setSortOrder }) => {
 	return (
-		<div className="flex border-b border-info bg-white h-36 w-full p-4">
+		<div className="flex border-b border-info bg-white max-h-36 w-full p-4">
 			<div className="flex flex-row my-auto mx-auto max-w-[600px] w-full">
 				<select
 					className="mr-4 border border-info rounded-lg py-2 px-4"
 					onChange={(e) => setSortOrder(e.target.value)}
 				>
-					<option value="">Sort by Spend</option>
 					<option value="asc">Ascending</option>
 					<option value="desc">Descending</option>
 					<option value="clear">Clear</option>

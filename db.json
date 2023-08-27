@@ -1,588 +1,588 @@
 {
-    "fakeDataSet": {
-        "facebook_ads":[
-            {
-                "campaign_name": "Summer Sale",
-                "media_buy_name": "Social Media Ads",
-                "ad_name": "Beach Vacation Promo",
-                "spend": 1500,
-                "impressions": 25000,
-                "clicks": 1200
-              },
-              {
-                "campaign_name": "Back to School",
-                "media_buy_name": "Display Ads",
-                "ad_name": "School Supplies Deal",
-                "spend": 1000,
-                "impressions": 18000,
-                "clicks": 800
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "media_buy_name": "Search Ads",
-                "ad_name": "Festive Sneak Peek",
-                "spend": 2000,
-                "impressions": 30000,
-                "clicks": 1500
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "media_buy_name": "Social Media Ads",
-                "ad_name": "New Season Styles",
-                "spend": 1500,
-                "impressions": 25000,
-                "clicks": 1200
-              },
-              {
-                "campaign_name": "Back to School",
-                "media_buy_name": "Display Ads",
-                "ad_name": "Beach Vacation Promo",
-                "spend": 1000,
-                "impressions": 18000,
-                "clicks": 800
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "media_buy_name": "Search Ads",
-                "ad_name": "New Season Styles",
-                "spend": 2000,
-                "impressions": 30000,
-                "clicks": 1500
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "media_buy_name": "Display Ads",
-                "ad_name": "Sunny Discounts",
-                "spend": 1200,
-                "impressions": 22000,
-                "clicks": 950
-              },
-              {
-                "campaign_name": "Back to School",
-                "media_buy_name": "Social Media Ads",
-                "ad_name": "Classroom Essentials",
-                "spend": 850,
-                "impressions": 16000,
-                "clicks": 720
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "media_buy_name": "Display Ads",
-                "ad_name": "Autumn Wardrobe Update",
-                "spend": 1800,
-                "impressions": 28000,
-                "clicks": 1400
-              },
-              {
-                "campaign_name": "Holiday Preview",
-                "media_buy_name": "Search Ads",
-                "ad_name": "Festive Sneak Peek",
-                "spend": 2100,
-                "impressions": 32000,
-                "clicks": 1650
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "media_buy_name": "Social Media Ads",
-                "ad_name": "Sunshine Specials",
-                "spend": 1300,
-                "impressions": 24000,
-                "clicks": 1100
-              },
-              {
-                "campaign_name": "Back to School",
-                "media_buy_name": "Display Ads",
-                "ad_name": "Smart Savings",
-                "spend": 950,
-                "impressions": 17000,
-                "clicks": 780
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "media_buy_name": "Search Ads",
-                "ad_name": "Cozy Fall Trends",
-                "spend": 2200,
-                "impressions": 34000,
-                "clicks": 1600
-              }
-        ],
-        "twitter_ads": [
-            {
-                "campaign": "Summer Sale",
-                "ad_group": "Social Media Ads",
-                "image_name": "Beach Promo",
-                "spend": 1500,
-                "impressions": 25000,
-                "post_clicks": 1200
-              },
-              {
-                "campaign": "Back to School",
-                "ad_group": "Display Ads",
-                "image_name": "School Supplies",
-                "spend": 1000,
-                "impressions": 18000,
-                "post_clicks": 800
-              },
-              {
-                "campaign": "Fall Fashion",
-                "ad_group": "Search Ads",
-                "image_name": "Season Styles",
-                "spend": 2000,
-                "impressions": 30000,
-                "post_clicks": 1500
-              },
-              {
-                "campaign": "Summer Sale",
-                "ad_group": "Display Ads",
-                "image_name": "Sunny Discounts",
-                "spend": 1200,
-                "impressions": 22000,
-                "post_clicks": 950
-              },
-              {
-                "campaign": "Back to School",
-                "ad_group": "Social Media Ads",
-                "image_name": "Classroom Deals",
-                "spend": 850,
-                "impressions": 16000,
-                "post_clicks": 720
-              },
-              {
-                "campaign": "Fall Fashion",
-                "ad_group": "Display Ads",
-                "image_name": "Autumn Wardrobe",
-                "spend": 1800,
-                "impressions": 28000,
-                "post_clicks": 1400
-              },
-              {
-                "campaign": "Holiday Preview",
-                "ad_group": "Search Ads",
-                "image_name": "Festive Sneak Peek",
-                "spend": 2100,
-                "impressions": 32000,
-                "post_clicks": 1650
-              },
-              {
-                "campaign": "Summer Sale",
-                "ad_group": "Social Media Ads",
-                "image_name": "Sunshine Specials",
-                "spend": 1300,
-                "impressions": 24000,
-                "post_clicks": 1100
-              },
-              {
-                "campaign": "Back to School",
-                "ad_group": "Display Ads",
-                "image_name": "Smart Savings",
-                "spend": 950,
-                "impressions": 17000,
-                "post_clicks": 780
-              },
-              {
-                "campaign": "Fall Fashion",
-                "ad_group": "Search Ads",
-                "image_name": "Cozy Trends",
-                "spend": 2200,
-                "impressions": 34000,
-                "post_clicks": 1600
-              },
-              {
-                "campaign": "Summer Sale",
-                "ad_group": "Display Ads",
-                "image_name": "Seaside Savings",
-                "spend": 1100,
-                "impressions": 21000,
-                "post_clicks": 900
-              },
-              {
-                "campaign": "Back to School",
-                "ad_group": "Social Media Ads",
-                "image_name": "Backpack Bonanza",
-                "spend": 800,
-                "impressions": 15000,
-                "post_clicks": 650
-              },
-              {
-                "campaign": "Fall Fashion",
-                "ad_group": "Display Ads",
-                "image_name": "Fall Faves",
-                "spend": 1900,
-                "impressions": 29000,
-                "post_clicks": 1450
-              },
-              {
-                "campaign": "Holiday Preview",
-                "ad_group": "Search Ads",
-                "image_name": "Holiday Glam",
-                "spend": 2300,
-                "impressions": 36000,
-                "post_clicks": 1800
-              },
-              {
-                "campaign": "Summer Sale",
-                "ad_group": "Social Media Ads",
-                "image_name": "Hot Deals",
-                "spend": 1400,
-                "impressions": 23000,
-                "post_clicks": 1050
-              },
-              {
-                "campaign": "Back to School",
-                "ad_group": "Display Ads",
-                "image_name": "School Style",
-                "spend": 900,
-                "impressions": 16000,
-                "post_clicks": 700
-              }
-        ],
-        "snapchat_ads": [
-            {
-                "campaign_name": "Summer Sale",
-                "ad_squad_name": "Social Media Squad",
-                "creative_name": "Beach Promo",
-                "cost": 1500,
-                "impressions": 25000,
-                "post_clicks": 1200
-              },
-              {
-                "campaign_name": "Back to School",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "School Supplies",
-                "cost": 1000,
-                "impressions": 18000,
-                "post_clicks": 800
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "ad_squad_name": "Search Ads Squad",
-                "creative_name": "Season Styles",
-                "cost": 2000,
-                "impressions": 30000,
-                "post_clicks": 1500
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "Sunny Discounts",
-                "cost": 1200,
-                "impressions": 22000,
-                "post_clicks": 950
-              },
-              {
-                "campaign_name": "Back to School",
-                "ad_squad_name": "Social Media Squad",
-                "creative_name": "Classroom Deals",
-                "cost": 850,
-                "impressions": 16000,
-                "post_clicks": 720
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "Autumn Wardrobe",
-                "cost": 1800,
-                "impressions": 28000,
-                "post_clicks": 1400
-              },
-              {
-                "campaign_name": "Holiday Preview",
-                "ad_squad_name": "Search Ads Squad",
-                "creative_name": "Festive Sneak Peek",
-                "cost": 2100,
-                "impressions": 32000,
-                "post_clicks": 1650
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "ad_squad_name": "Social Media Squad",
-                "creative_name": "Sunshine Specials",
-                "cost": 1300,
-                "impressions": 24000,
-                "post_clicks": 1100
-              },
-              {
-                "campaign_name": "Back to School",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "Smart Savings",
-                "cost": 950,
-                "impressions": 17000,
-                "post_clicks": 780
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "ad_squad_name": "Search Ads Squad",
-                "creative_name": "Cozy Trends",
-                "cost": 2200,
-                "impressions": 34000,
-                "post_clicks": 1600
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "Seaside Savings",
-                "cost": 1100,
-                "impressions": 21000,
-                "post_clicks": 900
-              },
-              {
-                "campaign_name": "Back to School",
-                "ad_squad_name": "Social Media Squad",
-                "creative_name": "Backpack Bonanza",
-                "cost": 800,
-                "impressions": 15000,
-                "post_clicks": 650
-              },
-              {
-                "campaign_name": "Fall Fashion",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "Fall Faves",
-                "cost": 1900,
-                "impressions": 29000,
-                "post_clicks": 1450
-              },
-              {
-                "campaign_name": "Holiday Preview",
-                "ad_squad_name": "Search Ads Squad",
-                "creative_name": "Holiday Glam",
-                "cost": 2300,
-                "impressions": 36000,
-                "post_clicks": 1800
-              },
-              {
-                "campaign_name": "Summer Sale",
-                "ad_squad_name": "Social Media Squad",
-                "creative_name": "Hot Deals",
-                "cost": 1400,
-                "impressions": 23000,
-                "post_clicks": 1050
-              },
-              {
-                "campaign_name": "Back to School",
-                "ad_squad_name": "Display Ads Squad",
-                "creative_name": "School Style",
-                "cost": 900,
-                "impressions": 16000,
-                "post_clicks": 700
-              }
-        ],
-        "google_analytics":[
-            {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Beach Promo",
-                "results": 72
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "School Supplies",
-                "results": 38
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Search Ads",
-                "utm_content": "Season Styles",
-                "results": 61
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Display Ads",
-                "utm_content": "Sunny Discounts",
-                "results": 50
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Classroom Deals",
-                "results": 23
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Display Ads",
-                "utm_content": "Autumn Wardrobe",
-                "results": 81
-              },
-              {
-                "utm_campaign": "Holiday Preview",
-                "utm_medium": "Search Ads",
-                "utm_content": "Festive Sneak Peek",
-                "results": 60
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Sunshine Specials",
-                "results": 49
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "Smart Savings",
-                "results": 18
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Search Ads",
-                "utm_content": "Cozy Trends",
-                "results": 67
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Display Ads",
-                "utm_content": "Seaside Savings",
-                "results": 32
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Backpack Bonanza",
-                "results": 12
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Display Ads",
-                "utm_content": "Fall Faves",
-                "results": 88
-              },
-              {
-                "utm_campaign": "Holiday Preview",
-                "utm_medium": "Search Ads",
-                "utm_content": "Holiday Glam",
-                "results": 41
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Hot Deals",
-                "results": 63
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "School Style",
-                "results": 55
-              },
-            {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Beach Promo",
-                "results": 87
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "School Supplies",
-                "results": 45
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Search Ads",
-                "utm_content": "Season Styles",
-                "results": 78
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Display Ads",
-                "utm_content": "Sunny Discounts",
-                "results": 65
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Classroom Deals",
-                "results": 32
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Display Ads",
-                "utm_content": "Autumn Wardrobe",
-                "results": 91
-              },
-              {
-                "utm_campaign": "Holiday Preview",
-                "utm_medium": "Search Ads",
-                "utm_content": "Festive Sneak Peek",
-                "results": 70
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Sunshine Specials",
-                "results": 58
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "Smart Savings",
-                "results": 29
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Search Ads",
-                "utm_content": "Cozy Trends",
-                "results": 82
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Display Ads",
-                "utm_content": "Seaside Savings",
-                "results": 70
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Backpack Bonanza",
-                "results": 15
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Display Ads",
-                "utm_content": "Fall Faves",
-                "results": 89
-              },
-              {
-                "utm_campaign": "Holiday Preview",
-                "utm_medium": "Search Ads",
-                "utm_content": "Holiday Glam",
-                "results": 42
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Hot Deals",
-                "results": 73
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "School Style",
-                "results": 51
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Social Media Ads",
-                "utm_content": "Beach Promo",
-                "results": 92
-              },
-              {
-                "utm_campaign": "Back to School",
-                "utm_medium": "Display Ads",
-                "utm_content": "School Supplies",
-                "results": 59
-              },
-              {
-                "utm_campaign": "Fall Fashion",
-                "utm_medium": "Search Ads",
-                "utm_content": "Season Styles",
-                "results": 75
-              },
-              {
-                "utm_campaign": "Summer Sale",
-                "utm_medium": "Display Ads",
-                "utm_content": "Sunny Discounts",
-                "results": 44
-              }
-        ]
-    }
+	"fakeDataSet": {
+		"facebook_ads": [
+			{
+				"campaign_name": "Summer Sale",
+				"media_buy_name": "Social Media Ads",
+				"ad_name": "Beach Vacation Promo",
+				"spend": 1500,
+				"impressions": 25000,
+				"clicks": 1200
+			},
+			{
+				"campaign_name": "Back to School",
+				"media_buy_name": "Display Ads",
+				"ad_name": "School Supplies Deal",
+				"spend": 1000,
+				"impressions": 18000,
+				"clicks": 800
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"media_buy_name": "Search Ads",
+				"ad_name": "Festive Sneak Peek",
+				"spend": 2000,
+				"impressions": 30000,
+				"clicks": 1500
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"media_buy_name": "Social Media Ads",
+				"ad_name": "New Season Styles",
+				"spend": 1500,
+				"impressions": 25000,
+				"clicks": 1200
+			},
+			{
+				"campaign_name": "Back to School",
+				"media_buy_name": "Display Ads",
+				"ad_name": "Beach Vacation Promo",
+				"spend": 1000,
+				"impressions": 18000,
+				"clicks": 800
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"media_buy_name": "Search Ads",
+				"ad_name": "New Season Styles",
+				"spend": 2000,
+				"impressions": 30000,
+				"clicks": 1500
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"media_buy_name": "Display Ads",
+				"ad_name": "Sunny Discounts",
+				"spend": 1200,
+				"impressions": 22000,
+				"clicks": 950
+			},
+			{
+				"campaign_name": "Back to School",
+				"media_buy_name": "Social Media Ads",
+				"ad_name": "Classroom Essentials",
+				"spend": 850,
+				"impressions": 16000,
+				"clicks": 720
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"media_buy_name": "Display Ads",
+				"ad_name": "Autumn Wardrobe Update",
+				"spend": 1800,
+				"impressions": 28000,
+				"clicks": 1400
+			},
+			{
+				"campaign_name": "Holiday Preview",
+				"media_buy_name": "Search Ads",
+				"ad_name": "Festive Sneak Peek",
+				"spend": 2100,
+				"impressions": 32000,
+				"clicks": 1650
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"media_buy_name": "Social Media Ads",
+				"ad_name": "Sunshine Specials",
+				"spend": 1300,
+				"impressions": 24000,
+				"clicks": 1100
+			},
+			{
+				"campaign_name": "Back to School",
+				"media_buy_name": "Display Ads",
+				"ad_name": "Smart Savings",
+				"spend": 950,
+				"impressions": 17000,
+				"clicks": 780
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"media_buy_name": "Search Ads",
+				"ad_name": "Cozy Fall Trends",
+				"spend": 2200,
+				"impressions": 34000,
+				"clicks": 1600
+			}
+		],
+		"twitter_ads": [
+			{
+				"campaign": "Summer Sale",
+				"ad_group": "Social Media Ads",
+				"image_name": "Beach Promo",
+				"spend": 1500,
+				"impressions": 25000,
+				"post_clicks": 1200
+			},
+			{
+				"campaign": "Back to School",
+				"ad_group": "Display Ads",
+				"image_name": "School Supplies",
+				"spend": 1000,
+				"impressions": 18000,
+				"post_clicks": 800
+			},
+			{
+				"campaign": "Fall Fashion",
+				"ad_group": "Search Ads",
+				"image_name": "Season Styles",
+				"spend": 2000,
+				"impressions": 30000,
+				"post_clicks": 1500
+			},
+			{
+				"campaign": "Summer Sale",
+				"ad_group": "Display Ads",
+				"image_name": "Sunny Discounts",
+				"spend": 1200,
+				"impressions": 22000,
+				"post_clicks": 950
+			},
+			{
+				"campaign": "Back to School",
+				"ad_group": "Social Media Ads",
+				"image_name": "Classroom Deals",
+				"spend": 850,
+				"impressions": 16000,
+				"post_clicks": 720
+			},
+			{
+				"campaign": "Fall Fashion",
+				"ad_group": "Display Ads",
+				"image_name": "Autumn Wardrobe",
+				"spend": 1800,
+				"impressions": 28000,
+				"post_clicks": 1400
+			},
+			{
+				"campaign": "Holiday Preview",
+				"ad_group": "Search Ads",
+				"image_name": "Festive Sneak Peek",
+				"spend": 2100,
+				"impressions": 32000,
+				"post_clicks": 1650
+			},
+			{
+				"campaign": "Summer Sale",
+				"ad_group": "Social Media Ads",
+				"image_name": "Sunshine Specials",
+				"spend": 1300,
+				"impressions": 24000,
+				"post_clicks": 1100
+			},
+			{
+				"campaign": "Back to School",
+				"ad_group": "Display Ads",
+				"image_name": "Smart Savings",
+				"spend": 950,
+				"impressions": 17000,
+				"post_clicks": 780
+			},
+			{
+				"campaign": "Fall Fashion",
+				"ad_group": "Search Ads",
+				"image_name": "Cozy Trends",
+				"spend": 2200,
+				"impressions": 34000,
+				"post_clicks": 1600
+			},
+			{
+				"campaign": "Summer Sale",
+				"ad_group": "Display Ads",
+				"image_name": "Seaside Savings",
+				"spend": 1100,
+				"impressions": 21000,
+				"post_clicks": 900
+			},
+			{
+				"campaign": "Back to School",
+				"ad_group": "Social Media Ads",
+				"image_name": "Backpack Bonanza",
+				"spend": 800,
+				"impressions": 15000,
+				"post_clicks": 650
+			},
+			{
+				"campaign": "Fall Fashion",
+				"ad_group": "Display Ads",
+				"image_name": "Fall Faves",
+				"spend": 1900,
+				"impressions": 29000,
+				"post_clicks": 1450
+			},
+			{
+				"campaign": "Holiday Preview",
+				"ad_group": "Search Ads",
+				"image_name": "Holiday Glam",
+				"spend": 2300,
+				"impressions": 36000,
+				"post_clicks": 1800
+			},
+			{
+				"campaign": "Summer Sale",
+				"ad_group": "Social Media Ads",
+				"image_name": "Hot Deals",
+				"spend": 1400,
+				"impressions": 23000,
+				"post_clicks": 1050
+			},
+			{
+				"campaign": "Back to School",
+				"ad_group": "Display Ads",
+				"image_name": "School Style",
+				"spend": 900,
+				"impressions": 16000,
+				"post_clicks": 700
+			}
+		],
+		"snapchat_ads": [
+			{
+				"campaign_name": "Summer Sale",
+				"ad_squad_name": "Social Media Squad",
+				"creative_name": "Beach Promo",
+				"cost": 1500,
+				"impressions": 25000,
+				"post_clicks": 1200
+			},
+			{
+				"campaign_name": "Back to School",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "School Supplies",
+				"cost": 1000,
+				"impressions": 18000,
+				"post_clicks": 800
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"ad_squad_name": "Search Ads Squad",
+				"creative_name": "Season Styles",
+				"cost": 2000,
+				"impressions": 30000,
+				"post_clicks": 1500
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "Sunny Discounts",
+				"cost": 1200,
+				"impressions": 22000,
+				"post_clicks": 950
+			},
+			{
+				"campaign_name": "Back to School",
+				"ad_squad_name": "Social Media Squad",
+				"creative_name": "Classroom Deals",
+				"cost": 850,
+				"impressions": 16000,
+				"post_clicks": 720
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "Autumn Wardrobe",
+				"cost": 1800,
+				"impressions": 28000,
+				"post_clicks": 1400
+			},
+			{
+				"campaign_name": "Holiday Preview",
+				"ad_squad_name": "Search Ads Squad",
+				"creative_name": "Festive Sneak Peek",
+				"cost": 2100,
+				"impressions": 32000,
+				"post_clicks": 1650
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"ad_squad_name": "Social Media Squad",
+				"creative_name": "Sunshine Specials",
+				"cost": 1300,
+				"impressions": 24000,
+				"post_clicks": 1100
+			},
+			{
+				"campaign_name": "Back to School",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "Smart Savings",
+				"cost": 950,
+				"impressions": 17000,
+				"post_clicks": 780
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"ad_squad_name": "Search Ads Squad",
+				"creative_name": "Cozy Trends",
+				"cost": 2200,
+				"impressions": 34000,
+				"post_clicks": 1600
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "Seaside Savings",
+				"cost": 1100,
+				"impressions": 21000,
+				"post_clicks": 900
+			},
+			{
+				"campaign_name": "Back to School",
+				"ad_squad_name": "Social Media Squad",
+				"creative_name": "Backpack Bonanza",
+				"cost": 800,
+				"impressions": 15000,
+				"post_clicks": 650
+			},
+			{
+				"campaign_name": "Fall Fashion",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "Fall Faves",
+				"cost": 1900,
+				"impressions": 29000,
+				"post_clicks": 1450
+			},
+			{
+				"campaign_name": "Holiday Preview",
+				"ad_squad_name": "Search Ads Squad",
+				"creative_name": "Holiday Glam",
+				"cost": 2300,
+				"impressions": 36000,
+				"post_clicks": 1800
+			},
+			{
+				"campaign_name": "Summer Sale",
+				"ad_squad_name": "Social Media Squad",
+				"creative_name": "Hot Deals",
+				"cost": 1400,
+				"impressions": 23000,
+				"post_clicks": 1050
+			},
+			{
+				"campaign_name": "Back to School",
+				"ad_squad_name": "Display Ads Squad",
+				"creative_name": "School Style",
+				"cost": 900,
+				"impressions": 16000,
+				"post_clicks": 700
+			}
+		],
+		"google_analytics": [
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Beach Promo",
+				"results": 72
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "School Supplies",
+				"results": 38
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Search Ads",
+				"utm_content": "Season Styles",
+				"results": 61
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Display Ads",
+				"utm_content": "Sunny Discounts",
+				"results": 50
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Classroom Deals",
+				"results": 23
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Display Ads",
+				"utm_content": "Autumn Wardrobe",
+				"results": 81
+			},
+			{
+				"utm_campaign": "Holiday Preview",
+				"utm_medium": "Search Ads",
+				"utm_content": "Festive Sneak Peek",
+				"results": 60
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Sunshine Specials",
+				"results": 49
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "Smart Savings",
+				"results": 18
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Search Ads",
+				"utm_content": "Cozy Trends",
+				"results": 67
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Display Ads",
+				"utm_content": "Seaside Savings",
+				"results": 32
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Backpack Bonanza",
+				"results": 12
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Display Ads",
+				"utm_content": "Fall Faves",
+				"results": 88
+			},
+			{
+				"utm_campaign": "Holiday Preview",
+				"utm_medium": "Search Ads",
+				"utm_content": "Holiday Glam",
+				"results": 41
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Hot Deals",
+				"results": 63
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "School Style",
+				"results": 55
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Beach Promo",
+				"results": 87
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "School Supplies",
+				"results": 45
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Search Ads",
+				"utm_content": "Season Styles",
+				"results": 78
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Display Ads",
+				"utm_content": "Sunny Discounts",
+				"results": 65
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Classroom Deals",
+				"results": 32
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Display Ads",
+				"utm_content": "Autumn Wardrobe",
+				"results": 91
+			},
+			{
+				"utm_campaign": "Holiday Preview",
+				"utm_medium": "Search Ads",
+				"utm_content": "Festive Sneak Peek",
+				"results": 70
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Sunshine Specials",
+				"results": 58
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "Smart Savings",
+				"results": 29
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Search Ads",
+				"utm_content": "Cozy Trends",
+				"results": 82
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Display Ads",
+				"utm_content": "Seaside Savings",
+				"results": 70
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Backpack Bonanza",
+				"results": 15
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Display Ads",
+				"utm_content": "Fall Faves",
+				"results": 89
+			},
+			{
+				"utm_campaign": "Holiday Preview",
+				"utm_medium": "Search Ads",
+				"utm_content": "Holiday Glam",
+				"results": 42
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Hot Deals",
+				"results": 73
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "School Style",
+				"results": 51
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Social Media Ads",
+				"utm_content": "Beach Promo",
+				"results": 92
+			},
+			{
+				"utm_campaign": "Back to School",
+				"utm_medium": "Display Ads",
+				"utm_content": "School Supplies",
+				"results": 59
+			},
+			{
+				"utm_campaign": "Fall Fashion",
+				"utm_medium": "Search Ads",
+				"utm_content": "Season Styles",
+				"results": 75
+			},
+			{
+				"utm_campaign": "Summer Sale",
+				"utm_medium": "Display Ads",
+				"utm_content": "Sunny Discounts",
+				"results": 44
+			}
+		]
+	}
 }
