@@ -1,71 +1,14 @@
 import "./App.css";
 import Card from "./components/Card";
 import { BsSearch as Search } from "react-icons/bs";
-import { useState, useEffect } from "react";
-import { standardizeAds, mergeAnalytics } from "./utility";
-
-// TODO:
-// [x] use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
-// [x] use the data in the fakeDataSet from the provided API to populate the cards with standardized data
-// [x] make cards sortable by spend, ascending and descending and clearable
-// [x] cards should be searchable by campaign name
-
-// TODO: Helper Functions
-// [x] create a function that accounts for different types of names
-// [ ] handle google analytics
+import { useState } from "react";
+import useDataServices from "./hooks/useDataServices";
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [sortOrder, setSortOrder] = useState(null);
-	const [data, setData] = useState(null);
+	const { data } = useDataServices();
 
-	useEffect(() => {
-		async function fetchData() {
-			try {
-				const response = await fetch(
-					"http://localhost:3000/fakeDataSet"
-				);
-				if (response.ok) {
-					const rawData = await response.json();
-
-					// Standardize and merge data
-					const standardizedFacebookAds = standardizeAds(
-						rawData.facebook_ads,
-						"Facebook"
-					);
-					const standardizedTwitterAds = standardizeAds(
-						rawData.twitter_ads,
-						"Twitter"
-					);
-					const standardizedSnapchatAds = standardizeAds(
-						rawData.snapchat_ads,
-						"Snapchat"
-					);
-					const allAds = [
-						...standardizedFacebookAds,
-						...standardizedTwitterAds,
-						...standardizedSnapchatAds,
-					];
-					const mergedAds = mergeAnalytics(
-						allAds,
-						rawData.google_analytics
-					);
-					setData(mergedAds); // Set the processed data
-				} else {
-					console.error(
-						"Failed to fetch data:",
-						response.status,
-						response.statusText
-					);
-				}
-			} catch (error) {
-				console.error("An error occurred while fetching data:", error);
-			}
-		}
-		fetchData();
-	}, []);
-
-	console.log(data);
 	let filteredCardData = [];
 
 	if (data) {
