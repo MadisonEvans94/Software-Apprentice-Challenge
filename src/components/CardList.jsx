@@ -3,8 +3,10 @@ import Card from "./Card";
 const CardList = ({ cardData }) => {
 	return (
 		<ul className="mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 py-8">
-			{cardData?.map((card) => (
-				<li key={`${card.campaign}_${card.adset}_${card.creative}`}>
+			{cardData?.map((card, i) => (
+				<li
+					key={`${card.campaign}_${card.adset}_${card.creative}_${i}`}
+				>
 					<Card
 						campaign={card.campaign}
 						adset={card.adset}
