@@ -5,6 +5,8 @@ When you are finished please make the repo public and send us the link to the re
 This shouldn't take more than 2-3 hours to complete.
 Please reach out if you have any questions. Good luck!
 
+> Important Note: to run, you need to create a .env file with `REACT_APP_API_URL=http://localhost:3000/fakeDataSet` listed as a variable
+
 ## Project Requirements:
 
 1. use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
