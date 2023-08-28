@@ -9,7 +9,7 @@ function App() {
 	const [sortOrder, setSortOrder] = useState(null);
 	const { data } = useDataServices();
 
-	// Using useMemo for optimized filtering and sorting
+	// memoization for optimized filtering and sorting
 	const filteredCardData = useMemo(() => {
 		let filteredData = [];
 
